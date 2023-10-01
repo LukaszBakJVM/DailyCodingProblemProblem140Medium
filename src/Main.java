@@ -9,7 +9,6 @@ public class Main {
     }
     private static List<Integer>getIntegers(List<Integer>integerList){
         return integerList.stream()
-                .sorted()
                 .filter(unique->integerList.indexOf(unique)==integerList.lastIndexOf(unique))
                 .toList();
 
